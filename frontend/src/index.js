@@ -5,7 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-import './cover.css'
 import Header from './components/Header';
 import Footer from './components/Footer';
 

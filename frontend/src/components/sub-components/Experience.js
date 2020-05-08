@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import './Timeline.css'
+import './Experience.css';
 
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 class  Experience extends Component{
 
@@ -19,26 +18,28 @@ class  Experience extends Component{
     }
     render(){
       return (
-        <VerticalTimeline
-        lineColor={'#ddd'}
-        >
-        {this.state.details.map(detail => { 
-          return (
-            <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            lineColor={{background: 'linear-gradient(to top, #03a9f4, #f441a5,#ffeb3b, #03a9f4)'}}
-            date={detail.start_date}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            // icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">{detail.company}</h3>
-            <h4 className="vertical-timeline-element-subtitle">{detail.position_title}</h4>
-            <p className="vertical-timeline-element-description">{detail.description}</p>
-          </VerticalTimelineElement>
-          )
-        })}
-        </VerticalTimeline>
-
+        <div id="experience" className="timeline">
+          <ul>
+            {this.state.details.map(detail => { 
+              return (
+                <li>
+                  <hr></hr>
+                  <div className="timeline-content">
+                    <h3>{detail.position_title}</h3>
+                    <h3>{detail.company}</h3>
+                    <pre>{detail.description}</pre>
+                  </div>
+                  <div className="time">
+                    <h4>{detail.end_date}</h4>
+                  </div>
+                  <hr></hr>
+                </li>
+                
+              )
+            })}
+          </ul><div className="timeline-after"></div>
+        </div>
+        
       )
     }
 }

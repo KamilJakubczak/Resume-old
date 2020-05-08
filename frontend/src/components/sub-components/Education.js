@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import './Timeline.css'
+import './Education.css'
 
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
 class  Education extends Component{
 
     state = {
@@ -19,23 +17,20 @@ class  Education extends Component{
     }
     render(){
       return (
-        <VerticalTimeline>
+          <div id="education" className="education-container">
         {this.state.details.map(detail => { 
           return (
-            <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date={detail.start_date}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<img src={detail.school_logo} width="52" height="52"/>}
-          >
-            <h3 className="vertical-timeline-element-title">{detail.school_name}</h3>
-            <h4 className="vertical-timeline-element-subtitle">{detail.course_name}</h4>
-            <p className="vertical-timeline-element-description">{detail.description}</p>
-          </VerticalTimelineElement>
+           <div id="id-{detail.order}" className="box">
+             <div className="content-box">
+              <h2>{detail.school_name}</h2>
+              <h4>{detail.course_name}</h4>
+              <p>{detail.description}</p>
+
+             </div>
+           </div>
           )
         })}
-        </VerticalTimeline>
-
+        </div>
       )
     }
 }

@@ -52,7 +52,12 @@ a {
     animation: animate 8s linear infinite;
   } */
   
-  
+  nav {
+    padding-top: 10px;
+    background: linear-gradient(90deg, #000,#262626, #000);
+    padding-left: 10% !important;
+   
+  }
   .logo {
   
     margin-bottom: 0;

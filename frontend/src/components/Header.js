@@ -6,20 +6,19 @@ class  Header extends Component{
     render(){
         return (
           <React.Fragment>
-             <header className="masthead mb-auto">
-                <div className="inner">
-                    <div className="masthead-brand logo-wrap">
+             <header>
+                <nav className="nav navbar-expand-lg fixed-top">
+                    <div className="logo-wrap">
                         <h3 className=" logo">Kamil Jakubczak</h3>
                         <div className="logo line"></div>
                     </div>
-                
-                <nav className="nav nav-masthead justify-content-center">
-                    <a  href="#contact">Projects</a>
-                    <a  href="#">Experience</a>
-                    <a  href="#">Education</a>
-                    <a  href="#">Contact</a>
+                    <div className="justify-content-end">
+                    <a  href="#">Projects</a>
+                    <a  href="#experience">Experience</a>
+                    <a  href="#education">Education</a>
+                    <a  href="#contact">Contact</a>
+                    </div>
                 </nav>
-                </div>
             </header>
           </React.Fragment>
         )
