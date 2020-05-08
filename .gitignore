@@ -1,0 +1,14 @@
+**/*.pyc
+/my_page_env
+**/media
+*.swp
+**/__pycache__/**
+*.pyc
+/__pycache__
+config.py
+__pycache__
+migrations
+.idea
+.vscode
+old_frontend
+page_env
