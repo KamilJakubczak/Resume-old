@@ -12,3 +12,4 @@ migrations
 .vscode
 old_frontend
 page_env
+node_modules

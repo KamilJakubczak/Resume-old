@@ -1,0 +1,14 @@
+.vertical-timeline-element-subtitle, 
+.vertical-timeline-element-title{
+    color: #262626;
+    margin:-5px;
+}
+.vertical-timeline-element-description {
+    color: #262626;
+}
+/* .vertical-timeline-element-date{
+    background-color: transparent;
+}
+.vertical-timeline-element-content {
+    background-color: yellow;
+} */
